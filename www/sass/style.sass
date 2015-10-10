@@ -1,0 +1,247 @@
+@import "compass/reset"
+@import url("http://webfonts.ru/import/rex.css")
+
+body
+  font-family: 'Rex Inline', sans-serif
+  font-size: 26px
+  color: #000
+.sticky
+  background-color: rgba(255, 255, 255, 1)
+header
+  .navigation
+    background-color: rgba(255,255,255, .8)
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 20
+    width: 100%
+    -webkit-transition: all .5s linear
+    -moz-transition: all .5s linear
+    -ms-transition: all .5s linear
+    -o-transition: all .5s linear
+    transition: all .5s linear
+    .logo-holder
+      padding: 38px 0
+    .nav-menu
+      float: right
+      ul
+        padding: 30px 0
+        li
+          display: inline-block
+          margin-right: 40px
+          padding-bottom: 0
+          border-bottom: 0 dashed #eeeeee
+          -webkit-transition: all .4s linear
+          -moz-transition: all .4s linear
+          -ms-transition: all .4s linear
+          -o-transition: all .4s linear
+          transition: all .4s linear
+          &:last-child
+            margin-right: 0
+          &:hover
+            padding-bottom: 8px
+            border-bottom: 2px dashed #000
+
+          a
+            color: #000
+
+#home
+  background: url("../img/home-bg.jpg")
+  background-position: center center
+  position: relative
+  width: 100%
+  height: 500px
+
+.go-bottom
+  a
+    text-align: center
+    color: #000
+    font-size: 36px
+    position: absolute
+    width: 40px
+    height: 40px
+    left: 50.3%
+    bottom: 2px
+    margin-left: -25px
+    margin-top: -20px
+    i
+      padding-top: 6px
+
+#rent-hire
+  background-color: #fff
+  position: relative
+  a
+    position: absolute
+    display: block
+    width: 50%
+    height: 100%
+    z-index: 2
+  h2
+    font-size: 40px
+    padding-top: 200px
+    padding-bottom: 200px
+  .rent-hire-left
+    text-align: center
+    float: left
+    width: 50%
+    height: 100%
+    background: url("../img/rent-hire-left-bg1.jpg")
+    -webkit-transition: background 1s ease
+    -moz-transition: background 1s ease
+    -ms-transition: background 1s ease
+    -o-transition: background 1s ease
+    transition: background 1s ease
+    &:hover
+      background: url("../img/rent-hire-left-bg.jpg")
+      -webkit-background-size: cover
+      background-size: cover
+      background-position: center center
+  .rent-hire-right
+    text-align: center
+    float: right
+    width: 50%
+    background: url("../img/rent-hire-right-bg1.jpg")
+    -webkit-transition: background 1s ease
+    -moz-transition: background 1s ease
+    -ms-transition: background 1s ease
+    -o-transition: background 1s ease
+    transition: background 1s ease
+    &:hover
+      background: url("../img/rent-hire-right-bg.jpg")
+      background-repeat: no-repeat
+      -webkit-background-size: cover
+      background-size: cover
+      background-position: center center
+
+#about-us
+  background: url("../img/about-us-bg.jpg")
+
+.section-title
+  font-size: 60px
+  h2
+    text-align: center
+    padding-top: 65px
+    padding-bottom: 20px
+
+.section-content
+  font-size: 30px
+  padding-bottom: 100px
+  img
+    max-width: 100%
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+  p
+    text-align: center
+    line-height: 40px
+
+#rent
+  background: url("../img/rent-bg.jpg")
+  position: relative
+  .text1, .text2, .text3
+    position: relative
+    display: inline-block
+  h3
+    display: inline-block
+    font-size: 18px
+  .text1
+    top: 65px
+    left: 30px
+    z-index: 4
+  .text2
+    top: 180px
+    left: 105px
+    z-index: 4
+  .text3
+    top: 65px
+    left: 180px
+    z-index: 4
+
+.rent-left, .hire-right
+  img
+    margin-bottom: 100px
+
+.rent-form, .hire-form
+  margin-bottom: 120px
+  display: block
+  input, select, textarea
+    width: 50%
+    margin-top: 20px
+    border: 1px solid #ccc
+    box-shadow: inset 0 1px 3px #ddd
+  textarea
+    resize: none
+  input[name='rent-name'], input[name='hire-name']
+    margin-right: 30px
+  input[name='rent-phone'], input[name='rent-type'], input[name='rent-price'], input[name='hire-phone'], input[name='hire-type'], input[name='hire-price'], input[name='hire-district']
+    display: inline-block
+  .button
+    padding: 8px 10px
+    margin-top: 40px
+    float: right
+    margin-right: 14%
+  label
+    display: inline-block
+    width: 35%
+    text-align: right
+
+#services1
+  background: url("../img/services1-bg.jpg")
+.services
+  ul
+    text-align: center
+    margin-bottom: 36px
+    li
+      display: inline-block
+      margin-right: 150px
+      &:last-child
+        margin-right: 0
+
+#hire
+  background: url("../img/hire-bg.jpg")
+  .hire-right
+    img
+      float: right
+
+#services2
+  background: url("../img/services1-bg.jpg")
+
+#why-us
+  background: url("../img/advances-bg.jpg")
+  text-align: center
+  p
+    margin-top: 20px
+    &:last-child
+      margin-bottom: 70px
+
+#subscribe
+  background: url("../img/subscribe.jpg")
+  text-align: center
+  .subscribe-form
+    margin-top: 62px
+    margin-bottom: 62px
+    input
+      margin-right: 100px
+
+#contacts
+  background: url("../img/contacts-bg.jpg")
+.contacts-form
+  text-align: center
+  input[type='text']
+    display: block
+    width: 50%
+    margin: 20px auto
+  textarea
+    display: block
+    width: 50%
+    height: 10%
+    margin: 20px auto
+    resize: none
+
+footer
+  background-color: #fff
+  height: 50px
+
+.no-padding
+  padding-right: 0
+  padding-left: 0
