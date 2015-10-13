@@ -1,36 +1,137 @@
 /*==========  Desktop First Method  ========== */
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 10, ../sass/media.sass */
+  body {
+    font-size: 24px;
+  }
+
+  /* line 14, ../sass/media.sass */
+  header .navigation .logo-holder {
+    display: none;
+  }
+  /* line 16, ../sass/media.sass */
+  header .navigation .nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 60;
+    right: 0;
+    top: 0;
+    display: none;
+  }
+  /* line 25, ../sass/media.sass */
+  header .navigation .nav-menu ul {
+    padding: 24% 0;
+  }
+  /* line 27, ../sass/media.sass */
+  header .navigation .nav-menu ul li {
+    display: block;
+    text-align: center;
+    margin-right: 0px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  /* line 33, ../sass/media.sass */
+  header .navigation .nav-menu ul li:hover {
+    padding-bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: none;
+  }
+  /* line 37, ../sass/media.sass */
+  header .navigation .nav-menu ul li a {
+    color: #FFFFFF;
+  }
+
+  /* line 39, ../sass/media.sass */
+  .navigation-mini-holder {
+    display: block;
+  }
+
+  /* line 41, ../sass/media.sass */
+  .section-title {
+    font-size: 46px;
+  }
+
+  /* line 43, ../sass/media.sass */
+  .section-content {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  /* line 47, ../sass/media.sass */
+  #rent .text1 {
+    top: 2.5rem;
+    left: 2.7rem;
+    z-index: 4;
+  }
+  /* line 51, ../sass/media.sass */
+  #rent .text2 {
+    top: 10rem;
+    left: 10.8rem;
+    z-index: 4;
+  }
+  /* line 55, ../sass/media.sass */
+  #rent .text3 {
+    top: 2.5rem;
+    left: 18.8rem;
+    z-index: 4;
+  }
+}
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 63, ../sass/media.sass */
+  body {
+    font-size: 20px;
+  }
+
+  /* line 68, ../sass/media.sass */
+  #subscribe .subscribe-form-holder .subscribe-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* line 75, ../sass/media.sass */
+  body {
+    font-size: 20px;
+  }
+
+  /* line 77, ../sass/media.sass */
+  .hire-form {
+    text-align: center;
+  }
+
+  /* line 79, ../sass/media.sass */
+  #hire-contact-form, #rent-contact-form {
+    text-align: center;
+  }
+  /* line 81, ../sass/media.sass */
+  #hire-contact-form input, #hire-contact-form select, #hire-contact-form textarea, #rent-contact-form input, #rent-contact-form select, #rent-contact-form textarea {
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+  }
+  /* line 85, ../sass/media.sass */
+  #hire-contact-form label, #rent-contact-form label {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  /* line 90, ../sass/media.sass */
+  #hire-contact-form .button, #rent-contact-form .button {
+    width: 100%;
+    float: none;
+  }
+}
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ========== */
 /* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /* line 31, ../sass/media.sass */
-  body {
-    font-size: 90%;
-  }
-}
 /* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /* line 38, ../sass/media.sass */
-  body {
-    font-size: 70%;
-  }
-}
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /* line 44, ../sass/media.sass */
-  body {
-    font-size: 80%;
-  }
-}
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /* line 50, ../sass/media.sass */
-  body {
-    font-size: 90%;
-  }
-}
 /* Large Devices, Wide Screens */

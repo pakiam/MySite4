@@ -31,16 +31,26 @@
                 </div>
                 <!-- menu -->
                 <div class="col-sm-10">
-                    <nav class="nav-menu">
-                        <ul>
-                            <li><a class="scroll active" href="#rent">Сдать</a></li>
-                            <li><a class="scroll" href="#hire">Снять</a></li>
-                            <li><a class="scroll" href="#about-us">О нас</a></li>
-                            <li><a class="scroll" href="#contacts">Контакты</a></li>
-                        </ul>
-                    </nav>
+                    <div class="navigation-holder">
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a class="scroll active" href="#rent">Сдать</a></li>
+                                <li><a class="scroll" href="#hire">Снять</a></li>
+                                <li><a class="scroll" href="#about-us">О нас</a></li>
+                                <li><a class="scroll" href="#info">Полезная информация</a></li>
+                                <li><a class="scroll" href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="navigation-mini-holder">
+        <div class="navigation-mini">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
     <div id="home">
@@ -50,7 +60,7 @@
             </div>
         </div>
         <div class="go-bottom">
-            <a href=""><i class="fa fa-chevron-down"></i></a>
+            <a class="scroll" href="#rent-hire"><i class="fa fa-chevron-down"></i></a>
         </div>
     </div>
 </header>
@@ -82,12 +92,14 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-content">
+
                     <p>Наша команда это опытные профессионалы любящие свое<br> дело, готовые помочь в любой<br>
                         ситуации. Мы всегда держим руку на пульсе, и в курсе всех<br> новостей в сфере надвижимости.
 
                         Представляем вашему выбору все виды аренды ДОЛГОСРОЧНАЯ, КРАТКОСРОЧНАЯ и
 
                         ПОСУТОЧНАЯ.</p>
+
                 </div>
             </div>
         </div>
@@ -105,63 +117,61 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="col-sm-4">
-                    <img src="img/cirle.png" alt=""/>
+                <div class="section-content">
+                    <div class="col-sm-4">
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/cirle.png" alt=""/>
+                        <p>Текст Текст</p>
+                    </div>
+                    <div class="col-sm-4">
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/cirle.png" alt=""/>
+                        <p>Текст Текст</p>
+                    </div>
+                    <div class="col-sm-4">
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="col-sm-4">
-                    <img src="img/cirle.png" alt=""/>
+                <div class="section-content">
+                    <div class="col-sm-4">
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/cirle.png" alt=""/>
+                        <p>Текст Текст</p>
+                    </div>
+                    <div class="col-sm-4">
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/cirle.png" alt=""/>
+                        <p>Текст Текст</p>
+                    </div>
+                    <div class="col-sm-4">
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
 
-                    <p>Текст Текст</p>
+                        <p>Текст Текст</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,13 +182,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <form class="subscribe-form" method="post" action="">
-                    <div class="control-group" style="display: inline-block">
-                        <label for="subscribe-phone">Телефон:</label>
-                        <input id="subscribe-phone" type="text"/>
-                    </div>
-                    <button class="button" type="submit">Мы вам перезвоним</button>
-                </form>
+                <div class="subscribe-form-holder">
+                    <div id="message1"></div>
+                    <form id="subscribe-form" class="subscribe-form" method="post" action="php/mail.php">
+                        <div style="display: inline-block;">
+                            <label for="subscribe-phone">Телефон:</label>
+                            <input id="subscribe-phone" type="text"/>
+                        </div>
+                        <button id="submit-phone" class="button" type="submit">Мы вам перезвоним</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -190,10 +203,6 @@
             <div class="col-md-12">
                 <div class="section-title">
                     <h2>Сдать</h2>
-
-                    <div class="text1"><h3>Текст</h3></div>
-                    <div class="text2"><h3>Текст</h3></div>
-                    <div class="text3"><h3>Текст</h3></div>
                 </div>
             </div>
         </div>
@@ -202,42 +211,53 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="rent-left">
-                    <img src="img/rent-circle.png" alt=""/>
+                    <ul>
+                        <li><p>Текст</p></li>
+                        <li><p>Текст</p></li>
+                        <li><p>Текст</p></li>
+                    </ul>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="rent-right">
-                    <form class="rent-form" action="">
-                        <div class="control-group">
-                            <label for="rent-name">Ф.И.О.:</label>
-                            <input id="rent-name" name="rent-name" type="text" required/>
+                    <div class="rent-contact-form-holder">
+                        <div id="rent-contact-form">
+                            <div id="message2"></div>
+                            <form method="post" action="php/contactrent.php" name="contactformrent" id="contactformrent">
+                                <div>
+                                    <label for="rent-name">Ф.И.О.:</label>
+                                    <input id="rent-name" name="rent-name" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="rent-phone">Телефон:</label>
+                                    <input id="rent-phone" name="rent-phone" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="rent-type">Тип объекта:</label>
+                                    <select id="rent-type" size="1" name="rent-type">
+                                        <option value="Комната">Комната</option>
+                                        <option value="1-комнатная кв">1-комнатная кв</option>
+                                        <option value="2-комнатная кв">2-комнатная кв</option>
+                                        <option value="3-комнатная кв">3-комнатная кв</option>
+                                        <option value="4-комнатная кв и более">4-комнатная кв и более</option>
+                                        <option value="Коттедж / дача / загородный дом">Коттедж / дача / загородный
+                                            дом
+                                        </option>
+                                        <option value="Квартира-студия">Квартира-студия</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="rent-price">Цена:</label>
+                                    <input id="rent-price" name="rent-price" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="rent-addinfo">Дополнительная информация:</label>
+                                    <textarea id="rent-addinfo" name="rent-addinfo"></textarea>
+                                </div>
+                                <button class="button button-rent" type="submit" id="submit-rent">Отправить</button>
+                            </form>
                         </div>
-                        <div class="control-group">
-                            <label for="rent-phone">Телефон:</label>
-                            <input id="rent-phone" name="rent-phone" type="text" required/>
-                        </div>
-                        <div class="control-group">
-                            <label for="rent-type">Тип объекта:</label>
-                            <select size="1" id="rent-type" name="rent-type" type="text">
-                                <option value="Room">Комната</option>
-                                <option value="1-appart">1-комнатная кв</option>
-                                <option value="2-appart">2-комнатная кв</option>
-                                <option value="3-appart">3-комнатная кв</option>
-                                <option value="4-appart">4-комнатная кв и более</option>
-                                <option value="house">Коттедж / дача / загородный дом</option>
-                                <option value="studio">Квартира-студия</option>
-                            </select>
-                        </div>
-                        <div class="control-group">
-                            <label for="rent-price">Цена:</label>
-                            <input id="rent-price" name="rent-price" type="text"/>
-                        </div>
-                        <div class="control-group">
-                            <label for="rent-addinfo">Дополнительная информация:</label>
-                            <textarea name="rent-addinfo" id="rent-addinfo"></textarea>
-                        </div>
-                        <button class="button button-rent" type="submit">Отправить</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,16 +277,29 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <ul>
-                    <li>Текст</li>
-                    <li>Текст</li>
-                    <li>Текст</li>
-                </ul>
-                <ul>
-                    <li>Текст</li>
-                    <li>Текст</li>
-                    <li>Текст</li>
-                </ul>
+                <div class="section-content">
+                    <div class="col-sm-4">
+
+                        <p>Текст Текст</p>
+
+
+                        <p>Текст Текст</p>
+                    </div>
+                    <div class="col-sm-4">
+
+                        <p>Текст Текст</p>
+
+
+                        <p>Текст Текст</p>
+                    </div>
+                    <div class="col-sm-4">
+
+                        <p>Текст Текст</p>
+
+
+                        <p>Текст Текст</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -286,66 +319,78 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="hire-left">
-                    <form class="hire-form" action="">
-                        <div class="control-group">
-                            <label for="rent-name">Ф.И.О.:</label>
-                            <input id="hire-name" name="rent-name" type="text" required/>
+                    <div class="hire-contact-form-holder">
+                        <div id="hire-contact-form">
+                            <div id="message3"></div>
+                            <form method="post" class="hire-form" action="php/contacthire.php" id="contactformhire">
+                                <div>
+                                    <label for="hire-name">Ф.И.О.:</label>
+                                    <input id="hire-name" name="hire-name" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="hire-phone">Телефон:</label>
+                                    <input id="hire-phone" name="hire-phone" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="hire-type">Выбрать:</label>
+                                    <select size="1" id="hire-type" name="hire-type">
+                                        <option value="Комната">Комната</option>
+                                        <option value="1-комнатная кв">1-комнатная кв</option>
+                                        <option value="2-комнатная кв">2-комнатная кв</option>
+                                        <option value="3-комнатная кв">3-комнатная кв</option>
+                                        <option value="4-комнатная кв и более">4-комнатная кв и более</option>
+                                        <option value="Коттедж / дача / загородный дом">Коттедж / дача / загородный
+                                            дом
+                                        </option>
+                                        <option value="Квартира-студия">Квартира-студия</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="hire-district">Район:</label>
+                                    <select size="1" id="hire-district" name="hire-type">
+                                        <option value="Адмиралтейский">Адмиралтейский</option>
+                                        <option value="Выборгский">Выборгский</option>
+                                        <option value="Василеостровский">Василеостровский</option>
+                                        <option value="Калининский">Калининский</option>
+                                        <option value="Кировский">Кировский</option>
+                                        <option value="Красногвардейский">Красногвардейский</option>
+                                        <option value="Красносельский">Красносельский</option>
+                                        <option value="Московский">Московский</option>
+                                        <option value="Невский">Невский</option>
+                                        <option value="Петроградский">Петроградский</option>
+                                        <option value="Приморский">Приморский</option>
+                                        <option value="Фрунзенский">Фрунзенский</option>
+                                        <option value="Центральный">Центральный</option>
+                                        <option value="Всеволожский">Всеволожский</option>
+                                        <option value="Курортный">Курортный</option>
+                                        <option value="Пушкинский">Пушкинский</option>
+                                        <option value="Петродворцовый">Петродворцовый</option>
+                                        <option value="Кронштадтский">Кронштадтский</option>
+                                        <option value="Область">Область</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="hire-price">Желаемая цена:</label>
+                                    <input id="hire-price" name="hire-price" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="hire-addinfo">Дополнительная информация:</label>
+                                    <textarea name="hire-addinfo" id="hire-addinfo"></textarea>
+                                </div>
+                                <button id="submit-hire" class="button button-hire" type="submit">Отправить</button>
+                            </form>
                         </div>
-                        <div class="control-group">
-                            <label for="hire-phone">Телефон:</label>
-                            <input id="hire-phone" name="rent-phone" type="text" required/>
-                        </div>
-                        <div class="control-group">
-                            <label for="hire-type">Выбрать:</label>
-                            <select size="1" id="hire-type" name="rent-type" type="text">
-                                <option value="Room">Комната</option>
-                                <option value="1-appart">1-комнатная кв</option>
-                                <option value="2-appart">2-комнатная кв</option>
-                                <option value="3-appart">3-комнатная кв</option>
-                                <option value="4-appart">4-комнатная кв и более</option>
-                                <option value="house">Коттедж / дача / загородный дом</option>
-                                <option value="studio">Квартира-студия</option>
-                            </select>
-                        </div>
-                        <div class="control-group">
-                            <label for="hire-district">Район:</label>
-                            <select size="1" id="hire-district" name="rent-type" type="text">
-                                <option value="Адмиралтейский">Адмиралтейский</option>
-                                <option value="Выборгский">Выборгский</option>
-                                <option value="Василеостровский">Василеостровский</option>
-                                <option value="Калининский">Калининский</option>
-                                <option value="Кировский">Кировский</option>
-                                <option value="Красногвардейский">Красногвардейский</option>
-                                <option value="Красносельский">Красносельский</option>
-                                <option value="Московский">Московский</option>
-                                <option value="Невский">Невский</option>
-                                <option value="Петроградский">Петроградский</option>
-                                <option value="Приморский">Приморский</option>
-                                <option value="Фрунзенский">Фрунзенский</option>
-                                <option value="Центральный">Центральный</option>
-                                <option value="Всеволожский">Всеволожский</option>
-                                <option value="Курортный">Курортный</option>
-                                <option value="Пушкинский">Пушкинский</option>
-                                <option value="Петродворцовый">Петродворцовый</option>
-                                <option value="Кронштадтский">Кронштадтский</option>
-                                <option value="Область">Область</option>
-                            </select>
-                        </div>
-                        <div class="control-group">
-                            <label for="hire-price">Желаемая цена:</label>
-                            <input id="hire-price" name="hire-price" type="text"/>
-                        </div>
-                        <div class="control-group">
-                            <label for="hire-addinfo">Дополнительная информация:</label>
-                            <textarea name="hire-addinfo" id="hire-addinfo"></textarea>
-                        </div>
-                        <button class="button button-hire" type="submit">Отправить</button>
-                    </form>
+                    </div>
                 </div>
             </div>
+
             <div class="col-md-6">
                 <div class="hire-right">
-                    <img src="img/hire-circle.png" alt=""/>
+                    <ul>
+                        <li><p>Текст</p></li>
+                        <li><p>Текст</p></li>
+                        <li><p>Текст</p></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -365,16 +410,55 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <ul>
-                    <li>Текст</li>
-                    <li>Текст</li>
-                    <li>Текст</li>
-                </ul>
-                <ul>
-                    <li>Текст</li>
-                    <li>Текст</li>
-                    <li>Текст</li>
-                </ul>
+                <div class="section-content">
+                    <div class="col-sm-4">
+
+                        <p>Текст Текст</p>
+
+
+                        <p>Текст Текст</p>
+                    </div>
+                    <div class="col-sm-4">
+
+                        <p>Текст Текст</p>
+
+
+                        <p>Текст Текст</p>
+                    </div>
+                    <div class="col-sm-4">
+
+                        <p>Текст Текст</p>
+
+
+                        <p>Текст Текст</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="info" class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Полезная информация</h2>
+                    <i class="fa fa-chevron-down expand"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-content expand-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugit iusto nam nihil
+                        pariatur
+                        perferendis quidem quis quisquam sapiente voluptate. Aliquid consectetur cupiditate enim
+                        molestias
+                        natus, perspiciatis sequi sit voluptates.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -392,21 +476,30 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-content">
-                    <form class="contacts-form" action="">
-                        <div class="control-group">
-                            <label for="contacts-form-name">Имя:</label>
-                            <input id="contacts-form-name" type="text" required/>
+                    <div class="hire-contact-form-holder">
+                        <div id="contacts-form">
+                            <div id="message4"></div>
+                            <form method="post" id="contactsform" class="contactsform" action="php/contact.php">
+                                <div>
+                                    <label for="contacts-form-name">Имя:</label>
+                                    <input id="contacts-form-name" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="contacts-form-email">E-mail:</label>
+                                    <input id="contacts-form-email" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="contacts-form-phone">Телефон:</label>
+                                    <input id="contacts-form-phone" type="text"/>
+                                </div>
+                                <div>
+                                    <label for="contacts-form-message">Сообщение:</label>
+                                    <textarea name="" id="contacts-form-message"></textarea>
+                                </div>
+                                <button id="submit-contacts" class="button" type="submit">Отправить</button>
+                            </form>
                         </div>
-                        <div class="control-group">
-                            <label for="contacts-form-phone">Телефон:</label>
-                            <input id="contacts-form-phone" type="text" required/>
-                        </div>
-                        <div class="control-group">
-                            <label for="contacts-form-message">Сообщение:</label>
-                            <textarea name="" id="contacts-form-message" required></textarea>
-                        </div>
-                        <button class="button" type="submit">Отправить</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -415,7 +508,21 @@
 </section>
 
 <footer>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <p>Контакты:</p>
+            </div>
+            <div class="col-xs-6">
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 <script src="libs/jQuery/jquery-2.1.4.min.js"></script>
 <!-- start-smoth-scrolling -->
@@ -425,7 +532,7 @@
     jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
             event.preventDefault();
-            $('html,body').animate({scrollTop: $(this.hash).offset().top - 80}, 1000);
+            $('html,body').animate({scrollTop: $(this.hash).offset().top - 64}, 1000);
         });
     });
 </script>
