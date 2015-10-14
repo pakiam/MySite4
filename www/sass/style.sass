@@ -1,9 +1,10 @@
 @import "compass/reset"
 @import "compass/css3"
-@import url("http://webfonts.ru/import/rex.css")
+/* ***Google fonts*** */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700)
 
 body
-  font-family: 'Rex Inline', sans-serif
+  font-family: 'Roboto', sans-serif
   font-size: 26px
   color: #000
 
@@ -28,7 +29,7 @@ header
     .nav-menu
       float: right
       ul
-        padding: 14px 0
+        padding-top: 20px
         li
           display: inline-block
           margin-right: 40px
@@ -156,13 +157,15 @@ header
 
 .section-content
   font-size: 30px
-  padding-bottom: 10%
+  padding-bottom: 5%
   img
     max-width: 100%
     -webkit-border-radius: 50%
     -moz-border-radius: 50%
     border-radius: 50%
   p
+    margin-top: 20px
+    font-size: 22px
     text-align: center
     line-height: 40px
 
@@ -190,7 +193,7 @@ header
   margin-bottom: 5%
   label
     display: inline-block
-    width: 35%
+    width: 37%
     text-align: right
   input, select, textarea
     width: 50%
@@ -240,10 +243,6 @@ header
 #why-us
   background: url("../img/advances-bg.jpg")
   text-align: center
-  p
-    margin-top: 20px
-    &:last-child
-      margin-bottom: 70px
 
 #subscribe
   background: url("../img/subscribe.jpg")
