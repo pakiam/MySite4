@@ -41,7 +41,7 @@ if (get_magic_quotes_gpc()) {
 // Enter the email address that you want to emails to be sent to.
 // Example $address = "joe.doe@yourdomain.com";
 
-$address = "sewr08@live.com";
+$address = "strong.peterburg@mail.ru";
 
 
 // Configuration option.

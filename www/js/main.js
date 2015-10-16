@@ -1,12 +1,13 @@
 $(document).ready(function(){
+    //navigation
     $(window).scroll(function() {
         if ($(this).scrollTop() > 109) {
-            $(".navigation").css("background-color", "rgba(255, 255, 255, 1)");
+            $(".navigation").addClass("navigation-sticky");
             setTimeout(function() {
                 $(".logo-holder").addClass("logo-sticky");
             }, 350);
         } else {
-            $(".navigation").css("background-color", "rgba(255, 255, 255, .8)");
+            $(".navigation").removeClass("navigation-sticky");
             setTimeout(function() {
                 $(".logo-holder").removeClass("logo-sticky");
             }, 350);
