@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    //scroll
+    $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({scrollTop: $(this.hash).offset().top - 64}, 1000);
+    });
     //navigation
     $(window).scroll(function () {
         if ($(this).scrollTop() > 109) {
