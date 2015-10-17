@@ -127,9 +127,8 @@ header .navigation .nav-menu ul li a {
   font-size: 20px;
   color: rgba(36, 37, 38, 0.9);
 }
-
 /* line 50, ../sass/style.sass */
-.navigation-sticky {
+header .navigation-sticky {
   box-shadow: 0 2px 2px 0 gray;
   background-color: white;
 }
@@ -140,7 +139,7 @@ header .navigation .nav-menu ul li a {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #333;
+  background: rgba(51, 51, 51, 0.95);
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -660,50 +659,65 @@ footer .socials li a:hover {
     left: 18.8rem;
     z-index: 4;
   }
+
+  /* line 59, ../sass/media.sass */
+  .hire-right-title {
+    padding-top: 10%;
+  }
+
+  /* line 61, ../sass/media.sass */
+  .rent-left-title {
+    padding-top: 10%;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* line 63, ../sass/media.sass */
+  /* line 67, ../sass/media.sass */
   body {
     font-size: 20px;
   }
 
-  /* line 68, ../sass/media.sass */
+  /* line 72, ../sass/media.sass */
   #subscribe .subscribe-form-holder .subscribe-form input {
     width: 100%;
     margin-bottom: 10px;
   }
+
+  /* line 75, ../sass/media.sass */
+  .rent-contact-form-holder, .hire-contact-form-holder {
+    padding-top: 0;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* line 75, ../sass/media.sass */
+  /* line 81, ../sass/media.sass */
   body {
     font-size: 20px;
   }
 
-  /* line 77, ../sass/media.sass */
+  /* line 83, ../sass/media.sass */
   .hire-form {
     text-align: center;
   }
 
-  /* line 79, ../sass/media.sass */
+  /* line 85, ../sass/media.sass */
   #hire-contact-form, #rent-contact-form {
     text-align: center;
   }
-  /* line 81, ../sass/media.sass */
+  /* line 87, ../sass/media.sass */
   #hire-contact-form input, #hire-contact-form select, #hire-contact-form textarea, #rent-contact-form input, #rent-contact-form select, #rent-contact-form textarea {
     display: block;
     width: 100%;
     margin: 0px auto;
   }
-  /* line 85, ../sass/media.sass */
+  /* line 91, ../sass/media.sass */
   #hire-contact-form label, #rent-contact-form label {
     display: inline-block;
     width: 100%;
     text-align: center;
     margin-top: 20px;
   }
-  /* line 90, ../sass/media.sass */
+  /* line 96, ../sass/media.sass */
   #hire-contact-form .button, #rent-contact-form .button {
     width: 100%;
     float: none;
